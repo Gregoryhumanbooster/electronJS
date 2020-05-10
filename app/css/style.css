@@ -1,0 +1,46 @@
+.container + table{
+  max-width: 1024px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.booking{
+  font-size: medium;
+  background-color: grey;
+  Color:black;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 3px;
+  cursor: pointer; 
+  text-decoration: none;
+}
+
+.nobooking{
+  font-size: medium;
+  background-color: green;
+  Color:black;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 3px;
+  cursor: pointer; 
+  text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr{
+  max-width: 1024px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+img{
+    max-height: 50px;
+    max-width: 75px;
+}

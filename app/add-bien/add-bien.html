@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Ajouter un bien</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <h1>Ajouter un bien</h1>
+        <div class="row">
+            <div class="col">
+
+                <div class="form-group">
+                    <label for="form-name">Nom</label>
+                    <input class="form-control" id="form-name" placeholder="Indiquez le nom de votre bien">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-city">Ville</label>
+                    <input class="form-control" id="form-city" placeholder="Indiquez la localisation de votre bien">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-group-label">
+                        <input type="radio" class="form-control-input" id="form-sell" value="A Vendre" name="optradio"
+                            checked>
+                        A Vendre
+                    </label>
+                    <label class="form-group-label">
+                        <input type="radio" class="form-control-input" id="form-rent" value="A Louer" name="optradio"> A
+                        Louer
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="form-surface">Surface (en m²)</label>
+                    <input class="form-control" type="number" id="form-surface" placeholder="Indiquez la surface en m²">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-price">Prix (en Euros)</label>
+                    <input class="form-control" type="number" id="form-price"
+                        placeholder="Indiquez le prix de vente ou le montant mensuel du loyer">
+                </div>
+
+                <div class="form-group">
+                    <label for="form-description">Description</label>
+                    <textarea class="form-control" id="form-description" maxlength="200" rows="3"
+                        placeholder="Donnez une description de votre bien en 200 caractères maximum"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="form-photo">Lien vers la photo du bien</label>
+                    <input class="form-control" id="form-photo"
+                        placeholder="Indiquez le lien URL de la photo de votre bien">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-group-label">
+                        <input type="radio" class="form-control-input" id="form-booked" value="reserve"
+                            name="optradiobis"> Réservé
+                    </label>
+                </div>
+                <div>
+                    <label class="form-group-label">
+                        <input type="radio" class="form-control-input" id="form-no-booked" value="no reserve"
+                            name="optradiobis" checked> Non Réservé
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button id="form-send" class="btn btn-primary">Ajouter le bien</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <script>
+        require('./add-bien')
+    </script>
+</body>
+
+</html>
